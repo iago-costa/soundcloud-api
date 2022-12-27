@@ -26,7 +26,7 @@ playlist = api.resolve(PLAYLIST_URL)
 
 assert isinstance(playlist, Playlist)
 
-playlist_folder = f'.downloaded_folders/{playlist.title} - {playlist.id}'
+playlist_folder = f'./downloaded_folders/{playlist.title} - {playlist.id}'
 
 if os.path.isdir(playlist_folder):
     print('Folder already exists')
